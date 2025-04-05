@@ -85,7 +85,7 @@ export default function Home() {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input autoFocus type="email" className={fieldState.invalid ? "border-error-900" : ""} {...field} />
+                  <Input type="email" className={fieldState.invalid ? "border-error-900" : ""} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
