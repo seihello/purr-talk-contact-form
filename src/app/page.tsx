@@ -44,19 +44,18 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col gap-y-16 items-center px-4 py-12 md:py-24 max-w-[700px] mx-auto">
+    <main>
       <div className="flex items-center gap-x-2">
         <img src="icon.png" alt="" className="w-12 rounded-lg" />
-        <h1 className="text-2xl font-semibold">PurrTalk Support Page</h1>
+        <h1>PurrTalk Support Page</h1>
       </div>
       <div className="flex flex-col gap-y-8">
-        <h2 className="text-center text-xl font-semibold">Privacy Policy</h2>
+        <h2>Privacy Policy</h2>
         {privacyPolicies.map((privacyPolicy, i) => (
-          <div key={i}>
-            <h3 className="text-lg font-semibold">
+          <div key={i} className="space-y-2">
+            <h3>
               {i + 1}. {privacyPolicy.title}
             </h3>
-            <hr className="border-t-4 border-primary-700 mb-2" />
             <p>{privacyPolicy.body}</p>
           </div>
         ))}
