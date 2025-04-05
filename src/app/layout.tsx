@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Signika_Negative } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const inter = Signika_Negative({ weight: "400", subsets: ["latin"] });
+const inter = Nunito({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "PurrTalk Support",
